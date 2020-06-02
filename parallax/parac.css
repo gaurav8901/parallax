@@ -1,0 +1,79 @@
+/*19,24,25,53,57,64,69,70,73,74*/
+
+body,html{
+	height:100%;
+	margin:0;
+	font-size:16px;
+	font-family:"Lato",sans-serif;
+	font-weight:400;		/*boldness of letters*/
+	line-height:1.8em;		/*distance btw. lines*/
+	color:pink;		
+	background-color:lightyellow;		
+}
+
+.img1, .img2, .img3{
+	position:relative;
+	opacity:0.70;
+	background-position:center;			/*at center*/
+	background-size:cover;				/*cover entire area*/
+	background-repeat:no-repeat;
+	background-attachment:fixed;		/*parallax->fixed,normal->scroll*/
+}
+
+.img1{
+	background-image:url('ai-nhan-YDMSH96i5AE-unsplash.jpg');
+	min-height:100%;				/*if 90% text starts at the bottom */
+}
+
+.img2{
+	background-image:url('brooke-lark-wMzx2nBdeng-unsplash.jpg');
+	min-height:500px;		/*height of image we saw*/
+}
+
+.img3{
+	background-image:url('brenda-godinez-_Zn_7FzoL1w-unsplash.jpg');
+	min-height:500px;
+}
+
+.section{					/*gets text color of body. and yellow background*/
+	text-align:center;
+	padding:50px 80px;		/*height then width   or box size*/
+}
+
+.section-light{
+	background-color:lightgray;
+	color:black;
+}
+
+.section-dark{
+	background-color:skyblue;
+	color:brown;
+}
+
+.text{
+	position:absolute;
+	top:50%;
+	width:100%;					/*because text align is center*/
+	text-align:center;
+	color:purple;				/*parallax website*/
+	font-size:27px;
+	letter-spacing:8px;			/*space btw letters*/
+	text-transform:uppercase;
+}
+
+.text .border{
+	background-color:lightgreen;
+	color:white;			/*parallax website*/ 
+	padding:20px;			
+}
+
+.text .border.trans{
+	background-color:transparent;
+}
+
+@media(max-width:668px){
+	.img1, .img2, .img3{
+		background-attachment:scroll;
+	}
+}
+
